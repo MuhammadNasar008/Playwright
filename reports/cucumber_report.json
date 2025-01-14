@@ -1,0 +1,250 @@
+[
+  {
+    "description": "  As a user\n  I want to test the login functionality\n  So that I can verify successful and unsuccessful login attempts",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 538024600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3568403900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter a valid username and password",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72612800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the login button",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557784600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see a message \"You logged into a secure area!\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65326799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 203685000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 546424299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3630953700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I enter an invalid username or password",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65412799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click the login button",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 580811999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see an error message \"Your username is invalid!\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27168799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 200999100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-with-empty-credentials",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Login with empty credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 533851500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3401050900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I leave both fields empty",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71908199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I click the login button",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 549882300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see an error message \"Your username is invalid!\"",
+            "match": {
+              "location": "src\\steps\\login.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64709300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 225163599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]

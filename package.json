@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "test": "cucumber-js",
+    "report": "node generate-report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.9.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.48.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  }
+}
